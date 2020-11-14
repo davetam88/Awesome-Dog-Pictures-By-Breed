@@ -52,7 +52,7 @@ function watchForm() {
     event.preventDefault();
     const userTextElement = $(event.currentTarget).find('#breed-type');
     var breedType = userTextElement.val();
-// make into lower case, otherwise fetch will flag an error.
+    // make into lower case, otherwise fetch will flag an error.
     var breedType = breedType.toLowerCase(); // dbg.
     userTextElement.val("");
     getDogImage(breedType);
